@@ -32,14 +32,36 @@ const cards = [
   "Карточка-4",
   "Карточка-5",
 ];
-
 console.log(cards);
 
-cards.splice(2, 1 );
+
+const cardToRemove = "Карточка-3";
+const indexToRemove = cards.indexOf(cardToRemove);
+
+cards.splice(indexToRemove, 2);
 console.log(cards);
 
-cards.splice(2, 1, "Карточка-6");
+
+const cardToInsert = "Карточка-6";
+const indexToInsert = 2;
+
+cards.splice(indexToInsert, 0, cardToInsert )
 console.log(cards);
 
-cards.splice(3, 0, 'Карточка-4');
+
+const cardToUptade = "Карточка-4";
+const indexToUptade = cards.indexOf(cardToUptade);
+
+cards.splice(indexToUptade, 0, cardToUptade);
 console.log(cards);
+
+
+
+// cards.splice(2, 1 );
+// console.log(cards);
+
+// cards.splice(2, 1, "Карточка-6");
+// console.log(cards);
+
+// cards.splice(3, 0, 'Карточка-4');
+// console.log(cards);
